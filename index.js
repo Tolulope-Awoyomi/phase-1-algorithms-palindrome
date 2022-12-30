@@ -1,9 +1,21 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const wordValue = word.split('');
+  const reverseWordValue = wordValue.reverse();
+  const reverseWord = reverseWordValue.join('');
+  if (word === reverseWord) {
+    return true
+  }
+  else {
+    return false
+  }
 }
+isPalindrome("abba")
 
 /* 
-  Add your pseudocode here
+  Add your pseudocode here:
+  Write a function called isPalindrome(word) 
+  declare variables wordValue, reverseWordValue and reverseWord and assign .split, .reverse and .join respectively
+  run an if statement to return true if word equals reverseWord variable
 */
 
 /*
